@@ -36,5 +36,10 @@ public class GreetingsController {
         return message.getMessage();
     }
 
+    @GetMapping("/messages")
+    public List<Message> getMessages() {
+        return messages;
+    }
+
 
 }
